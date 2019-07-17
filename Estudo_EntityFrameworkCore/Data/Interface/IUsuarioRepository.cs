@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Estudo_EntityFrameworkCore.Data.Interface
 {
-    public interface IUserRepository : IRepository<User>
+    public interface IUsuarioRepository : IRepository<UsuarioDAO>
     {
        
     }

@@ -17,9 +17,9 @@ namespace Estudo_EntityFrameworkCore.Data
             {
                 var context = serviceScope.ServiceProvider.GetService<IgrejaDbContext>();
 
-                var jjonajaime = new User { Name = "JJonaJaime", Email = "JJonaJaime@jj.com" , IdUser = 1};
+                var jjonajaime = new UsuarioDAO { Nome = "JJonaJaime", Email = "JJonaJaime@jj.com", UsuarioId = 1 };
 
-                context.Users.Add(jjonajaime);
+                context.Usuario.Add(jjonajaime);
 
                 context.SaveChanges();
             }

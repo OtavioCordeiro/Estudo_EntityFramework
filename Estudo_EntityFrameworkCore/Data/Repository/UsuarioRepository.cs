@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Estudo_EntityFrameworkCore.Data.Repository
 {
-    public class UserRepository : Repository<User>, IUserRepository
+    public class UsuarioRepository : Repository<UsuarioDAO>, IUsuarioRepository
     {
-        public UserRepository(IgrejaDbContext context) : base(context)
+        public UsuarioRepository(IgrejaDbContext context) : base(context)
         {
         }
     }

@@ -9,11 +9,11 @@ namespace Estudo_EntityFrameworkCore.Data
 {
     public class IgrejaDbContext : DbContext
     {
-        public IgrejaDbContext(DbContextOptions<IgrejaDbContext> options) :base(options)
+        public IgrejaDbContext(DbContextOptions<IgrejaDbContext> options) : base(options)
         {
 
         }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<UsuarioDAO> Usuario { get; set; }
     }
 }

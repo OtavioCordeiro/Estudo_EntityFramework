@@ -28,8 +28,10 @@ namespace Estudo_EntityFrameworkCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<IgrejaDbContext>(options => options.UseInMemoryDatabase("IgrejaDbContext"));
-            services.AddTransient<IUserRepository, UserRepository>();
+            string connectionString = @"Data Source=OTAVIO\SQLEXPRESS;Initial Catalog=IgrejaDB;Integrated Security=True";
+            //services.AddDbContext<IgrejaDbContext>(options => options.UseInMemoryDatabase("IgrejaDbContext"));
+            services.AddDbContext<IgrejaDbContext>(options => options.UseSqlServer(connectionString));
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -43,7 +45,7 @@ namespace Estudo_EntityFrameworkCore
 
             app.UseMvc();
 
-            DbInitialize.Seed(app);
+            //DbInitialize.Seed(app);
         }
     }
 }

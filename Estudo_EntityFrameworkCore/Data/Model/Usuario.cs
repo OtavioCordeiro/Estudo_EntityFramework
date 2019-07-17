@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Estudo_EntityFrameworkCore.Data.Model
 {
-    public class User
+    public class UsuarioDAO
     {
         [Key]
-        public int IdUser { get; set; }
-        public string Name { get; set; }
+        public int UsuarioId { get; set; }
+        public string Nome { get; set; }
         public string Email { get; set; }
     }
 }
