@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estudo_EntityFrameworkCore", "Estudo_EntityFrameworkCore\Estudo_EntityFrameworkCore.csproj", "{E0DB2832-878A-4059-B23D-666845530651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estudo_EntityFrameworkCore", "Estudo_EntityFrameworkCore\Estudo_EntityFrameworkCore.csproj", "{E0DB2832-878A-4059-B23D-666845530651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteXUnit", "TesteXUnit\TesteXUnit.csproj", "{77C9B432-4076-452B-BCAD-BDD6861E9EDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E0DB2832-878A-4059-B23D-666845530651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0DB2832-878A-4059-B23D-666845530651}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0DB2832-878A-4059-B23D-666845530651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C9B432-4076-452B-BCAD-BDD6861E9EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C9B432-4076-452B-BCAD-BDD6861E9EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C9B432-4076-452B-BCAD-BDD6861E9EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C9B432-4076-452B-BCAD-BDD6861E9EDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
